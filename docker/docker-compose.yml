@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:17
+    container_name: theeverythingapp-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: theeverythingapp
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: devpassword123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

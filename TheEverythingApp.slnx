@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/TheEverythingApp.Application/TheEverythingApp.Application.csproj" Id="53ca0b7e-db06-4e89-9895-c208b06a6307" />
+  <Project Path="src/TheEverythingApp.Infrastructure/TheEverythingApp.Infrastructure.csproj" Id="01d234ee-a568-47eb-b861-218a4a47e89b" />
+  <Project Path="src/TheEverythingApp.WebAPI/TheEverythingApp.WebAPI.csproj" Id="89fe0836-c5b2-4187-ab28-3f4b7fda2dce" />
+</Solution>
