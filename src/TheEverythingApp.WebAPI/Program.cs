@@ -1,4 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using TheEverythingApp.Infrastructure.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Add DB context
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
 
 // Add services to the container.
 builder.Services.AddControllers();
