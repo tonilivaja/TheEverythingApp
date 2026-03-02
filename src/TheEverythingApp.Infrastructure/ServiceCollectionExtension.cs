@@ -1,6 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using TheEverythingApp.Application.Features.Auth;
+using TheEverythingApp.Application.Features.Habits;
 using TheEverythingApp.Infrastructure.Features.Auth;
+using TheEverythingApp.Infrastructure.Features.Habits;
 
 namespace TheEverythingApp.Infrastructure;
 
@@ -10,6 +12,7 @@ public static class ServiceCollectionExtension
     {
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IJwtService, JwtService>();
+        services.AddScoped<IHabitService, HabitService>();
 
         return services;
     }
